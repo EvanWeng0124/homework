@@ -1,0 +1,12 @@
+#include <iostream>
+#include <chrono>
+#include<thread>
+using namespace std;
+using namespace std::chrono;
+int main(){int num;
+    cout << "Enter a number:";
+    cin >> num;
+    for (int i = 1; i <= num; ++i){
+        cout << string(num - i, ' ') << string(i,'*') << "  " << string(i, '*') << endl;
+    }
+return 0;}
