@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int d, t = 0;
+    cout << "請輸入一個數字: ";
+    cin >> d;
+    int coins[] = {50, 25, 10, 1};
+    for (int coin : coins) {
+        t += d / coin;
+        d %= coin;
+    }
+cout << "最少要花" << t << "個硬幣" << endl;
+return 0;
+}
