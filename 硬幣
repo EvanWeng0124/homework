@@ -4,7 +4,7 @@ int main() {
 int d, t = 0;
 cout << "請輸入一個數字: ";
 cin >> d;
-int coins[] = {50, 25, 10, 1};
+int coins[] = {25, 10, 5, 1};
 for (int coin : coins) {
     t += d / coin;
     d %= coin;
